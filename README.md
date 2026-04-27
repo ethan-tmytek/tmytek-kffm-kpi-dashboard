@@ -1,16 +1,42 @@
-# React + Vite
+# tmytek-kffm-kpi-dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+KFFM KPI Dashboard — TMYTek 內部 KPI 儀表板，使用 Vite + React 建立。
 
-Currently, two official plugins are available:
+## 線上 Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+**Production：** https://tmytek-kffm-kpi-dashboard.vercel.app
 
-## React Compiler
+## 本地啟動
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```bash
+# 安裝依賴
+npm install
 
-## Expanding the ESLint configuration
+# 啟動開發伺服器（預設 http://localhost:5173）
+npm run dev
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+# 建置正式版本
+npm run build
+
+# 預覽建置結果
+npm run preview
+```
+
+## 技術棧
+
+- [Vite](https://vite.dev/) — 快速建置工具
+- [React](https://react.dev/) — UI 框架
+
+## 部署流程
+
+本專案已透過 Vercel 的 GitHub 整合自動部署：
+
+1. 在本地修改程式碼
+2. `git add . && git commit -m "描述變更"`
+3. `git push` → Vercel 自動觸發部署
+4. 約 30 秒後，正式環境自動更新
+
+## 相關連結
+
+- GitHub：https://github.com/ethan-tmytek/tmytek-kffm-kpi-dashboard
+- Vercel Dashboard：https://vercel.com/ethan-tmyteks-projects/tmytek-kffm-kpi-dashboard
