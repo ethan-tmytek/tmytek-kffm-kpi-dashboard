@@ -3,12 +3,13 @@ import {
   CategoryScale,
   LinearScale,
   BarElement,
+  BarController,
   Tooltip,
   Legend,
 } from 'chart.js';
 import { Bar } from 'react-chartjs-2';
 
-ChartJS.register(CategoryScale, LinearScale, BarElement, Tooltip, Legend);
+ChartJS.register(CategoryScale, LinearScale, BarElement, BarController, Tooltip, Legend);
 
 const data = {
   labels: ['提案機會', '核准專案', '研發原型', '採購訂單', '試產批次', '開立發票'],
